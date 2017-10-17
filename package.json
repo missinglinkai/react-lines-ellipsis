@@ -1,6 +1,6 @@
 {
   "name": "react-lines-ellipsis",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Simple multiline ellipsis component for React.JS",
   "main": "lib/index.js",
   "files": [
@@ -11,8 +11,7 @@
     "prebuild": "mkdir -p lib",
     "build": "for js in src/*.js; do babel $js > \"lib/$(basename $js)\"; done",
     "docs": "browserify -e docs/app.js | uglifyjs -m > docs/app.bundle.js",
-    "docs:watch": "watchify -e docs/app.js -o docs/app.bundle.js",
-    "prepare": "npm run build"
+    "docs:watch": "watchify -e docs/app.js -o docs/app.bundle.js"
   },
   "keywords": [
     "react",
